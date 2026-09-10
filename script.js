@@ -90,3 +90,8 @@ const filmek = [
     "rating": 5
   }
 ];
+
+const table = document.getElementsByTagName("table");
+filmek.forEach(element => {
+    document.createElement
+});
