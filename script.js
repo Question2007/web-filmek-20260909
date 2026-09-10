@@ -99,10 +99,15 @@ for (const film of filmek) {
     const genre = document.createElement("td")
     const rating = document.createElement("td")
 
+
+    for (let star = 0; star < film.rating; star++) {
+        rating.innerText = rating.innerText + "⭐"
+    }
+
     title.innerText = film.title
     year.innerText = film.year
     genre.innerText = film.genre
-    rating.innerText = film.rating
+    //rating.innerText = film.rating
 
     tr.appendChild(title)
     tr.appendChild(year)
