@@ -121,3 +121,13 @@ for (const film of filmek) {
     }
 
 }
+
+const gomb = document.getElementById("gomb")
+gomb.addEventListener("click", function(){
+    const film_nev = document.getElementById("name").value
+    const tr = document.createElement("tr")
+    const title = document.createElement("td")
+    title.innerText = film_nev
+    tr.appendChild(title)
+    table.appendChild(tr)
+})
