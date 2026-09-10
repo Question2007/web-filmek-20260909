@@ -91,7 +91,24 @@ const filmek = [
   }
 ];
 
-const table = document.getElementsByTagName("table");
-filmek.forEach(element => {
-    document.createElement
-});
+const table = document.getElementById("tablazat");
+for (const film of filmek) {
+    const tr = document.createElement("tr")
+    const title = document.createElement("td")
+    const year = document.createElement("td")
+    const genre = document.createElement("td")
+    const rating = document.createElement("td")
+
+    title.innerText = film.title
+    year.innerText = film.year
+    genre.innerText = film.genre
+    rating.innerText = film.rating
+
+    tr.appendChild(title)
+    tr.appendChild(year)
+    tr.appendChild(genre)
+    tr.appendChild(rating)
+
+    table.appendChild(tr)
+
+}
